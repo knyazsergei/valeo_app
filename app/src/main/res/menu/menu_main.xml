@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="sknyazev.valeo.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuDeleteAllNotes"
+        android:title="@string/delete_all"
+        app:showAsAction="never" />
+
+    <item android:title="@string/sort_by">
+        <menu>
+            <item
+                android:id="@+id/menuSortByName"
+                android:title="@string/sort_by_title" />
+            <item
+                android:id="@+id/menuSortByDate"
+                android:title="@string/sort_by_date" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuExit"
+        android:title="Выход"
+        app:showAsAction="never" />
+</menu>
